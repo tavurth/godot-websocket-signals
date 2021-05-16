@@ -1,0 +1,9 @@
+#+TITLE: Godot websocket signals issue
+
+#+begin_src
+git clone git@github.com:tavurth/godot-websocket-signals.git
+cd godot-websocket-signals
+godot --server
+#+end_src
+
+For the client you can run from Godot as normal.
