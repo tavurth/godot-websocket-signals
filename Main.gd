@@ -109,7 +109,8 @@ func connection_loop():
 		create_connection()
 
 func _physics_process(_delta: float):
-	get_tree().get_network_peer().poll()
+	if get_tree().has_network_peer():
+		get_tree().get_network_peer().poll()
 
 func _ready():
 	connection_loop()
